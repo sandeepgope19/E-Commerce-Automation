@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project is a Selenium-based automation testing framework developed using Java, Maven, and TestNG to validate key functionalities of an e-commerce web application. It automates major user workflows such as registration, login, and other functional scenarios to ensure application reliability.
+This project is a Selenium-based automation testing framework developed using Java, Maven, and TestNG. It automates user account registration functionality of an e-commerce application.
 
 ---
 
@@ -12,34 +12,21 @@ This project is a Selenium-based automation testing framework developed using Ja
 * Selenium WebDriver
 * TestNG
 * Maven
-* Extent Reports
 
 ---
 
-## ⚙️ Framework Features
+## ⚙️ Features Implemented
 
 * Page Object Model (POM) design pattern
-* Reusable utility methods
-* Data-driven testing support
-* Structured and maintainable test cases
-* Detailed test reporting using Extent Reports
+* BasePage for common initialization
+* Page classes for Home and Registration
+* Test case for Account Registration
+* BaseClass for reusable setup methods
+* Utility methods for random data generation
 
 ---
 
-## 📂 Project Structure
-
-* `pageObjects` – Page classes for UI interactions
-* `testCases` – Test scripts
-* `testBase` – Base setup and configuration
-* `pom.xml` – Project dependencies
-
----
-
-## ▶️ How to Run Tests
-
-1. Clone the repository
-2. Open the project in your IDE
-3. Execute tests using TestNG or run:
+## ▶️ How to Run
 
 ```bash
 mvn test
@@ -47,10 +34,11 @@ mvn test
 
 ---
 
-## 🚀 Enhancements
+## 🚧 Work in Progress
 
-* Framework improvements for scalability and maintainability
-* Support for advanced execution strategies
+* Adding login and other test scenarios
+* Enhancing framework structure
+* Improving reusability and reporting
 
 ---
 
