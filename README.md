@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project is a Selenium-based automation testing framework developed using Java, Maven, and TestNG. It automates user account registration functionality of an e-commerce application.
+This project is a Selenium-based automation testing framework developed using Java, Maven, and TestNG to validate core functionalities of an e-commerce web application. It covers both manual and automated testing approaches with a focus on scalability and maintainability.
 
 ---
 
@@ -12,33 +12,55 @@ This project is a Selenium-based automation testing framework developed using Ja
 * Selenium WebDriver
 * TestNG
 * Maven
+* Log4j2
 
 ---
 
-## ⚙️ Features Implemented
+## ⚙️ Framework Features
 
 * Page Object Model (POM) design pattern
-* BasePage for common initialization
-* Page classes for Home and Registration
-* Test case for Account Registration
-* BaseClass for reusable setup methods
-* Utility methods for random data generation
+* Reusable BaseClass and Page Objects
+* Utility methods for test data generation
+* Logging using Log4j2 for better debugging and traceability
+* Configuration management using properties file
+* Cross-browser testing (Chrome, Edge)
+* Parallel test execution using TestNG
 
 ---
 
-## ▶️ How to Run
+## 📂 Project Structure
 
-```bash
+* `pageObjects` – Page classes for UI interactions
+* `testCases` – Test scripts
+* `testBase` – Base setup and reusable methods
+* `testng.xml` – Test execution configuration
+* `testng-parallel.xml` – Parallel execution setup
+* `config.properties` – Environment configuration
+* `log4j2.xml` – Logging configuration
+
+---
+
+## ▶️ How to Run Tests
+
+### Run using TestNG
+
+```bash id="v98iyh"
 mvn test
 ```
 
+### Run using XML
+
+* Run `testng.xml` for single browser
+* Run `testng-parallel.xml` for parallel execution
+
 ---
 
-## 🚧 Work in Progress
+## 🚀 Key Highlights
 
-* Adding login and other test scenarios
-* Enhancing framework structure
-* Improving reusability and reporting
+* Automated user workflows like account registration
+* Implemented scalable and maintainable automation framework
+* Enabled parallel execution to improve test efficiency
+* Integrated logging for better debugging
 
 ---
 
