@@ -1,69 +1,152 @@
 # 🛒 E-Commerce Automation Testing Framework
 
-## 📌 Overview
+A robust and scalable **Automation Testing Framework** for an E-Commerce web application built using **Java, Selenium WebDriver, TestNG, and Maven**.
 
-This project is a Selenium-based automation testing framework developed using Java, Maven, and TestNG to validate core functionalities of an e-commerce web application. It covers both manual and automated testing approaches with a focus on scalability and maintainability.
+This framework follows the **Page Object Model (POM)** design pattern and supports **data-driven testing, cross-browser execution, logging, and configuration management**, making it close to real-world industry standards.
+
+---
+
+## 🚀 Features
+
+### 📝 Account Registration Automation
+- Automated Account Registration Test Case  
+- Created reusable BasePage class  
+- Developed:
+  - HomePage  
+  - RegistrationPage  
+- Implemented AccountRegistrationTest  
+
+---
+
+### 🏗️ Framework Design
+- Implemented Page Object Model (POM)  
+- Created BaseClass for setup and teardown  
+- Added reusable methods:
+  - Random string generator  
+  - Random number generator  
+
+---
+
+### 📊 Logging (log4j2)
+- Integrated log4j2 logging  
+- Added log4j2.xml configuration  
+- Logging implemented in test cases and base class  
+
+---
+
+### 🌐 Cross-Browser & Parallel Execution
+- Configured TestNG XML  
+- Parameterized browser and OS  
+- Enabled:
+  - Cross-browser testing  
+  - Parallel execution  
+
+---
+
+### ⚙️ Configuration Management
+- Used config.properties for test data  
+- Removed hard-coded values  
+- Dynamic configuration loading  
+
+---
+
+### 🔐 Login Automation
+- Automated login functionality  
+- Created:
+  - LoginPage  
+  - MyAccountPage  
+- Implemented LoginTest  
+
+---
+
+### 📊 Data-Driven Testing
+- Implemented data-driven testing using Excel  
+- Used Apache POI  
+- Created:
+  - ExcelUtility  
+  - DataProviders  
+- Tested multiple login scenarios  
+- Added logout validation  
 
 ---
 
 ## 🧰 Tech Stack
 
-* Java
-* Selenium WebDriver
-* TestNG
-* Maven
-* Log4j2
+- Java  
+- Selenium WebDriver  
+- TestNG  
+- Maven  
+- Page Object Model (POM)  
+- log4j2  
+- Apache POI  
+- Git  
 
 ---
 
-## ⚙️ Framework Features
+## 📁 Project Structure
 
-* Page Object Model (POM) design pattern
-* Reusable BaseClass and Page Objects
-* Utility methods for test data generation
-* Logging using Log4j2 for better debugging and traceability
-* Configuration management using properties file
-* Cross-browser testing (Chrome, Edge)
-* Parallel test execution using TestNG
 
----
+E-Commerce-Automation
+│── src/test/java
+│ ├── testCases
+│ │ ├── AccountRegistrationTest
+│ │ ├── LoginTest
+│ │ ├── LoginDataDrivenTest
+│ ├── pageObjects
+│ │ ├── BasePage
+│ │ ├── HomePage
+│ │ ├── RegistrationPage
+│ │ ├── LoginPage
+│ │ ├── MyAccountPage
+│ ├── testBase
+│ │ ├── BaseClass
+│ ├── utilities
+│ │ ├── ExcelUtility
+│ │ ├── DataProviders
+│
+│── src/test/resources
+│ ├── config.properties
+│ ├── log4j2.xml
+│
+│── testData
+│ ├── LoginData.xlsx
+│
+│── testng.xml
+│── pom.xml
 
-## 📂 Project Structure
-
-* `pageObjects` – Page classes for UI interactions
-* `testCases` – Test scripts
-* `testBase` – Base setup and reusable methods
-* `testng.xml` – Test execution configuration
-* `testng-parallel.xml` – Parallel execution setup
-* `config.properties` – Environment configuration
-* `log4j2.xml` – Logging configuration
-
----
-
-## ▶️ How to Run Tests
-
-### Run using TestNG
-
-```bash id="v98iyh"
-mvn test
-```
-
-### Run using XML
-
-* Run `testng.xml` for single browser
-* Run `testng-parallel.xml` for parallel execution
 
 ---
 
-## 🚀 Key Highlights
+## ▶️ How to Run the Project
 
-* Automated user workflows like account registration
-* Implemented scalable and maintainable automation framework
-* Enabled parallel execution to improve test efficiency
-* Integrated logging for better debugging
-
----
-
-## 👨‍💻 Author
+### 1. Clone Repository
+```bash
+git clone https://github.com/sandeepgope19/E-Commerce-Automation
+2. Navigate to Project
+cd E-Commerce-Automation
+3. Install Dependencies
+mvn clean install
+4. Run Tests
+Run using testng.xml
+Or run test classes from IDE (Eclipse / IntelliJ)
+📸 Screenshots (Add Here)
+Test Execution Output
+TestNG Reports
+📌 Key Learnings
+Built a real-world automation framework
+Implemented POM design pattern
+Worked on data-driven testing
+Performed cross-browser and parallel execution
+Integrated logging and configuration management
+👨‍💻 Author
 
 Sandeep Gope
+
+Trainee Test Engineer
+Skilled in Manual & Automation Testing
+Selenium | Java | TestNG | API Testing
+⭐ Future Enhancements
+Add Extent Reports / Allure Reports
+CI/CD integration using Jenkins
+API Automation (Rest Assured)
+Docker execution
