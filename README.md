@@ -114,30 +114,28 @@ E-Commerce-Automation
 ### 1. Clone Repository
 ```bash
 git clone https://github.com/sandeepgope19/E-Commerce-Automation
-
-### 2. Navigate to Project
 cd E-Commerce-Automation
-
-### 3. Install Dependencies
 mvn clean install
+```
 
-### 4. Run Tests
-Run using testng.xml
-Or run test classes from IDE (Eclipse)
+### 2. Run Tests
+- Run using `testng.xml`
+- Or run test classes from IDE (Eclipse / IntelliJ)
 
 ---
+
 ## 📸 Screenshots
-- Test Execution Output  
-- TestNG Reports  
+- Test Execution Output
+- TestNG Reports
 
 ---
 
 ## 📌 Key Learnings
-- Built a real-world automation framework  
-- Implemented POM design pattern  
-- Worked on data-driven testing  
-- Performed cross-browser and parallel execution  
-- Integrated logging and configuration management  
+- Built a real-world automation framework
+- Implemented POM design pattern
+- Worked on data-driven testing
+- Performed cross-browser and parallel execution
+- Integrated logging and configuration management
 
 ---
 
@@ -145,14 +143,14 @@ Or run test classes from IDE (Eclipse)
 
 **Sandeep Gope**
 
-- Trainee Test Engineer  
-- Skilled in Manual & Automation Testing  
-- Selenium | Java | TestNG | API Testing  
+- Trainee Test Engineer
+- Skilled in Manual & Automation Testing
+- Selenium | Java | TestNG | API Testing
 
 ---
 
 ## ⭐ Future Enhancements
-- Add Extent Reports / Allure Reports  
-- CI/CD integration using Jenkins  
-- API Automation (Rest Assured)  
-- Docker execution  
+- Add Extent Reports / Allure Reports
+- CI/CD integration using Jenkins
+- API Automation (Rest Assured)
+- Docker execution
