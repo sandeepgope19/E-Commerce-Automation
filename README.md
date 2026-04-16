@@ -60,9 +60,15 @@ This framework follows the **Page Object Model (POM)** design pattern and suppor
 - Used Apache POI  
 - Created ExcelUtility and DataProviders  
 - Tested multiple login scenarios  
-- Added logout validation  
-
+- Added logout validation
+- 
 ---
+
+### 📈 Reporting & Test Execution (NEW 🔥)
+- Integrated **Extent Reports** for detailed HTML reports  
+- Implemented **screenshot capture on test failure**  
+- Configured **TestNG Listeners** for reporting  
+- Enabled **re-run of failed test cases** using `testng-failed.xml`
 
 ## 🧰 Tech Stack
 
@@ -72,40 +78,42 @@ This framework follows the **Page Object Model (POM)** design pattern and suppor
 - Maven  
 - Page Object Model (POM)  
 - log4j2  
-- Apache POI  
+- Apache POI
+- Extent Reports 
 - Git  
 
 ---
 
-## 📁 Project Structure
 E-Commerce-Automation
 │── src/test/java
-│ ├── testCases
-│ │ ├── AccountRegistrationTest
-│ │ ├── LoginTest
-│ │ ├── LoginDataDrivenTest
-│ ├── pageObjects
-│ │ ├── BasePage
-│ │ ├── HomePage
-│ │ ├── RegistrationPage
-│ │ ├── LoginPage
-│ │ ├── MyAccountPage
-│ ├── testBase
-│ │ ├── BaseClass
-│ ├── utilities
-│ │ ├── ExcelUtility
-│ │ ├── DataProviders
+│   ├── testCases
+│   │   ├── AccountRegistrationTest
+│   │   ├── LoginTest
+│   │   ├── LoginDataDrivenTest
+│   ├── pageObjects
+│   │   ├── BasePage
+│   │   ├── HomePage
+│   │   ├── RegistrationPage
+│   │   ├── LoginPage
+│   │   ├── MyAccountPage
+│   ├── testBase
+│   │   ├── BaseClass
+│   ├── utilities
+│   │   ├── ExcelUtility
+│   │   ├── DataProviders
+│   │   ├── ExtentReportUtility
 │
 │── src/test/resources
-│ ├── config.properties
-│ ├── log4j2.xml
+│   ├── config.properties
+│   ├── log4j2.xml
 │
 │── testData
-│ ├── LoginData.xlsx
+│   ├── LoginData.xlsx
 │
+│── test-output   (ignored)
 │── testng.xml
 │── pom.xml
-
+```
 
 ---
 
@@ -120,13 +128,14 @@ mvn clean install
 
 ### 2. Run Tests
 - Run using `testng.xml`
-- Or run test classes from IDE (Eclipse / IntelliJ)
+- Re-run failed tests using `testng-failed.xml`
 
 ---
 
 ## 📸 Screenshots
 - Test Execution Output
 - TestNG Reports
+- Extent Report (HTML)  
 
 ---
 
@@ -150,7 +159,15 @@ mvn clean install
 ---
 
 ## ⭐ Future Enhancements
-- Add Extent Reports / Allure Reports
 - CI/CD integration using Jenkins
 - API Automation (Rest Assured)
 - Docker execution
+
+---
+
+## 🔗 Project Link
+https://github.com/sandeepgope19/E-Commerce-Automation
+
+---
+
+⭐ If you like this project, give it a star!
