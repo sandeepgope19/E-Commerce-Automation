@@ -11,11 +11,12 @@ import testBase.BaseClass;
 public class TC_002_LoginTest extends BaseClass
 {
 
-	@Test
+	@Test(groups= {"Sanity","Master"}) //Step8 groups added
 	public void verify_login()
 	{
 		logger.info("**** Starting TC_002_LoginTest  ****");
 		logger.debug("capturing application debug logs....");
+		
 		try
 		{
 		//Home page
@@ -34,8 +35,7 @@ public class TC_002_LoginTest extends BaseClass
 		logger.info("clicked on ligin button..");
 		
 		//My Account Page
-		MyAccountPage macc=new MyAccountPage(driver);
-				
+		MyAccountPage macc=new MyAccountPage(driver);	
 		boolean targetPage=macc.isMyAccountPageExists();
 		
 		Assert.assertEquals(targetPage, true,"Login failed");

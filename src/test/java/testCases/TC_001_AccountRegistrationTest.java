@@ -9,7 +9,7 @@ import testBase.BaseClass;
 
 public class TC_001_AccountRegistrationTest extends BaseClass {
 
-	@Test
+	@Test(groups= {"Regression","Master"}) //Step8 groups added
 	public void verify_account_registration()
 	{
 		logger.info("***** Starting TC001_AccountRegistrationTest  ****");
@@ -39,6 +39,8 @@ public class TC_001_AccountRegistrationTest extends BaseClass {
 
 			regpage.setPrivacyPolicy();
 			regpage.clickContinue();
+			
+			Thread.sleep(2000);
 
 			logger.info("Validating expected message..");
 
