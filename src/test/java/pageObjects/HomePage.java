@@ -7,37 +7,37 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage extends BasePage{
 
 	WebDriver driver;
-	
+
 	public HomePage(WebDriver driver)
 	{
 		super(driver);
 	}
-	
-@FindBy(xpath="//span[normalize-space()='My Account']") 
-WebElement lnkMyaccount;
 
-@FindBy(xpath="//a[normalize-space()='Register']") 
-WebElement lnkRegister;
+	@FindBy(xpath="//span[normalize-space()='My Account']") 
+	WebElement lnkMyaccount;
 
-@FindBy(linkText = "Login")   // Login link added in step5
-WebElement linkLogin;
+	@FindBy(xpath="//a[normalize-space()='Register']") 
+	WebElement lnkRegister;
 
-
-public void clickMyAccount()
-{
-	lnkMyaccount.click();
-}
-
-public void clickRegister()
-{
-	lnkRegister.click();
-}
+	@FindBy(linkText = "Login")   // Login link added in step5
+	WebElement linkLogin;
 
 
-public void clickLogin()    // added in step5
-{
-	linkLogin.click();
-}
+	public void clickMyAccount()
+	{
+		lnkMyaccount.click();
+	}
+
+	public void clickRegister()
+	{
+		lnkRegister.click();
+	}
+
+
+	public void clickLogin()    // added in step5
+	{
+		linkLogin.click();
+	}
 
 
 

@@ -32,6 +32,6 @@ public class LoginPage extends BasePage {
 		btnLogin.click();
 	}
 
-	
+
 
 }
