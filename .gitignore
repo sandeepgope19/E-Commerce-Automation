@@ -1,0 +1,12 @@
+.metadata/
+.settings/
+.project
+.classpath
+target/
+logs/
+*.log
+test-output/
+reports/
+screenshots/
+.DS_Store
+Thumbs.db
