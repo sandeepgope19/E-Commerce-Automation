@@ -17,3 +17,8 @@ test-output/
 # OS files
 .DS_Store
 Thumbs.db
+
+.metadata/
+logs/
+target/
+test-output/
