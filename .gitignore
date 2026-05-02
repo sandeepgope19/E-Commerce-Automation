@@ -2,11 +2,21 @@
 .settings/
 .project
 .classpath
+<<<<<<< HEAD
+=======
+
+>>>>>>> 53b304fe807007607e20d9a850e6c568d700ad50
 target/
 logs/
 *.log
 test-output/
 reports/
 screenshots/
+<<<<<<< HEAD
 .DS_Store
 Thumbs.db
+=======
+
+.DS_Store
+Thumbs.db
+>>>>>>> 53b304fe807007607e20d9a850e6c568d700ad50
