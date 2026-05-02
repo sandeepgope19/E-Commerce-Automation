@@ -1,5 +1,4 @@
 target/
-test-output/
 *.log
 *.class
 *.tmp
@@ -7,4 +6,3 @@ test-output/
 .project
 .classpath
 reports/
-screenshots/
