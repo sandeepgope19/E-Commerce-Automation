@@ -1,16 +1,19 @@
 # Eclipse
 .metadata/
+.settings/
 .project
 .classpath
-.settings/
 
-# Build
+# Maven
 target/
 
 # Logs
 logs/
 *.log
 
-# OS
+# Test Output
+test-output/
+
+# OS files
 .DS_Store
 Thumbs.db
