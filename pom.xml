@@ -3,8 +3,7 @@
   <groupId>SeleniumProject</groupId>
   <artifactId>E-Commerce</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<<<<<<< HEAD
-  
+
   <build>
 	<pluginManagement>
 		<plugins>
@@ -28,10 +27,7 @@
 </build>
   
   <dependencies>
-=======
-  <dependencies>
-  
->>>>>>> 53b304fe807007607e20d9a850e6c568d700ad50
+
   <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
