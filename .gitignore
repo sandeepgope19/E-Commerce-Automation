@@ -1,13 +1,35 @@
-target/
-*.log
-*.class
-*.tmp
-.settings/
+# =========================
+# Eclipse Files
+# =========================
+.metadata/
 .project
 .classpath
-reports/
-.metadata/
+.settings/
+bin/
+*.launch
+
+# =========================
+# Maven / Build
+# =========================
+target/
+
+# =========================
+# Logs
+# =========================
 logs/
-test-output/
+*.log
+*.log.gz
 
 
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temp Files
+# =========================
+*.tmp
+*.bak
+*.swp
